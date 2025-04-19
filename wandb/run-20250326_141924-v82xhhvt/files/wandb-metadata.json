@@ -1,0 +1,35 @@
+{
+  "os": "macOS-15.3.2-x86_64-i386-64bit",
+  "python": "CPython 3.12.2",
+  "startedAt": "2025-03-26T13:19:24.572209Z",
+  "program": "/Users/martaalvarez/MLII-Grupo6/Practicas_DeepLearning_2025_nuevo/03TransferLearning/03TransferLearning.ipynb",
+  "codePath": "03TransferLearning/03TransferLearning.ipynb",
+  "git": {
+    "remote": "https://github.com/agascong/Practicas_DeepLearning_2025.git",
+    "commit": "2489fddad49edbb4b649bda4892cbb8fa3159bb6"
+  },
+  "email": "202402675@alu.icai.comillas.edu",
+  "root": "/Users/martaalvarez/MLII-Grupo6/Practicas_DeepLearning_2025_nuevo/03TransferLearning",
+  "host": "MacBook-Pro-de-MARTA-ALVAREZ",
+  "executable": "/Users/martaalvarez/MLII-Grupo6/dl_lab/bin/python",
+  "codePathLocal": "03TransferLearning.ipynb",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "1000240963584",
+      "used": "433689247744"
+    },
+    "/System/Volumes/Data": {
+      "total": "1000240963584",
+      "used": "433689247744"
+    }
+  },
+  "memory": {
+    "total": "17179869184"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  }
+}

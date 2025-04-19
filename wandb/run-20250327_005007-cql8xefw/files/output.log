@@ -1,0 +1,2 @@
+Downloading: "https://download.pytorch.org/models/mobilenet_v2-7ebf99e0.pth" to /Users/martaalvarez/.cache/torch/hub/checkpoints/mobilenet_v2-7ebf99e0.pth
+100%|██████████| 13.6M/13.6M [00:01<00:00, 7.66MB/s]

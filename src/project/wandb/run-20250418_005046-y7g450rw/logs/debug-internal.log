@@ -1,0 +1,31 @@
+{"time":"2025-04-18T00:50:46.749886+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/martaalvarez/MLII-Grupo6/Project_Grupo6_MLII/src/project/wandb/run-20250418_005046-y7g450rw/logs/debug-core.log"}
+{"time":"2025-04-18T00:50:46.777748+02:00","level":"INFO","msg":"created new stream","id":"y7g450rw"}
+{"time":"2025-04-18T00:50:46.777897+02:00","level":"INFO","msg":"handler: started","stream_id":"y7g450rw"}
+{"time":"2025-04-18T00:50:46.778009+02:00","level":"INFO","msg":"stream: started","id":"y7g450rw"}
+{"time":"2025-04-18T00:50:46.777944+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"y7g450rw"}
+{"time":"2025-04-18T00:50:46.778201+02:00","level":"INFO","msg":"sender: started","stream_id":"y7g450rw"}
+{"time":"2025-04-18T00:50:47.17285+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-18T00:50:47.409901+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-18T00:51:03.142425+02:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/MLII-Grupo6-2025/MLII-Grupo6-2025/y7g450rw/file_stream"}
+{"time":"2025-04-18T00:51:03.14308+02:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/MLII-Grupo6-2025/MLII-Grupo6-2025/y7g450rw/file_stream: {\"error\":\"run MLII-Grupo6-2025/y7g450rw not found while streaming file\"}"}
+{"time":"2025-04-18T00:51:21.17172+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-18T00:51:21.182852+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-18T00:51:21.337801+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run y7g450rw was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-04-18T00:51:23.921685+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run y7g450rw was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-04-18T00:51:28.232459+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run y7g450rw was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-04-18T00:51:33.817837+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-18T00:51:33.828095+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-18T00:51:36.390609+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-18T00:51:36.401642+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-18T00:51:36.582273+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run y7g450rw was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-04-18T00:51:37.562751+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-18T00:51:37.576201+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-18T00:51:54.399772+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run y7g450rw was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-04-18T00:51:57.180008+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-18T00:51:57.188898+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-18T00:51:58.199697+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-18T00:51:58.214004+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-18T00:52:05.806081+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-18T00:52:05.820915+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-18T00:52:11.069004+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-18T00:52:11.078631+02:00","level":"INFO","msg":"Pausing system monitor"}

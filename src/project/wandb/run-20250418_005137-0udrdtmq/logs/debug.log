@@ -1,0 +1,44 @@
+2025-04-18 00:51:37,569 INFO    MainThread:3602 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/martaalvarez/MLII-Grupo6/Project_Grupo6_MLII/src/project/wandb/run-20250418_005137-0udrdtmq/logs/debug.log
+2025-04-18 00:51:37,569 INFO    MainThread:3602 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/martaalvarez/MLII-Grupo6/Project_Grupo6_MLII/src/project/wandb/run-20250418_005137-0udrdtmq/logs/debug-internal.log
+2025-04-18 00:51:37,570 INFO    MainThread:3602 [wandb_init.py:init():761] calling init triggers
+2025-04-18 00:51:37,571 INFO    MainThread:3602 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'img_size': 224, 'optimizer': 'Adam', 'learning_rate': 0.0001, 'epochs': 7, 'unfreezed_layers': 5, '_wandb': {}}
+2025-04-18 00:51:37,571 INFO    MainThread:3602 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-18 00:51:37,574 INFO    MainThread:3602 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-18 00:51:37,575 INFO    MainThread:3602 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-18 00:51:57,178 INFO    MainThread:3602 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-18 00:51:57,185 INFO    MainThread:3602 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/martaalvarez/MLII-Grupo6/Project_Grupo6_MLII/src/project/wandb/run-20250418_005157-a8peyarv/logs/debug.log
+2025-04-18 00:51:57,186 INFO    MainThread:3602 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/martaalvarez/MLII-Grupo6/Project_Grupo6_MLII/src/project/wandb/run-20250418_005157-a8peyarv/logs/debug-internal.log
+2025-04-18 00:51:57,186 INFO    MainThread:3602 [wandb_init.py:init():761] calling init triggers
+2025-04-18 00:51:57,186 INFO    MainThread:3602 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'img_size': 224, 'optimizer': 'Adam', 'learning_rate': 0.0001, 'epochs': 7, 'unfreezed_layers': 5, '_wandb': {}}
+2025-04-18 00:51:57,186 INFO    MainThread:3602 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-18 00:51:57,188 INFO    MainThread:3602 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-18 00:51:57,188 INFO    MainThread:3602 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-18 00:51:58,195 INFO    MainThread:3602 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-18 00:51:58,207 INFO    MainThread:3602 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/martaalvarez/MLII-Grupo6/Project_Grupo6_MLII/src/project/wandb/run-20250418_005158-e039fduu/logs/debug.log
+2025-04-18 00:51:58,207 INFO    MainThread:3602 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/martaalvarez/MLII-Grupo6/Project_Grupo6_MLII/src/project/wandb/run-20250418_005158-e039fduu/logs/debug-internal.log
+2025-04-18 00:51:58,208 INFO    MainThread:3602 [wandb_init.py:init():761] calling init triggers
+2025-04-18 00:51:58,208 INFO    MainThread:3602 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'img_size': 224, 'optimizer': 'Adam', 'learning_rate': 0.0001, 'epochs': 7, 'unfreezed_layers': 5, '_wandb': {}}
+2025-04-18 00:51:58,208 INFO    MainThread:3602 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-18 00:51:58,212 INFO    MainThread:3602 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-18 00:51:58,213 INFO    MainThread:3602 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-18 00:52:05,804 INFO    MainThread:3602 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-18 00:52:05,812 INFO    MainThread:3602 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/martaalvarez/MLII-Grupo6/Project_Grupo6_MLII/src/project/wandb/run-20250418_005205-k5t914i8/logs/debug.log
+2025-04-18 00:52:05,814 INFO    MainThread:3602 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/martaalvarez/MLII-Grupo6/Project_Grupo6_MLII/src/project/wandb/run-20250418_005205-k5t914i8/logs/debug-internal.log
+2025-04-18 00:52:05,815 INFO    MainThread:3602 [wandb_init.py:init():761] calling init triggers
+2025-04-18 00:52:05,815 INFO    MainThread:3602 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'img_size': 224, 'optimizer': 'Adam', 'learning_rate': 0.0001, 'epochs': 7, 'unfreezed_layers': 5, '_wandb': {}}
+2025-04-18 00:52:05,816 INFO    MainThread:3602 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-18 00:52:05,818 INFO    MainThread:3602 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-18 00:52:05,819 INFO    MainThread:3602 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-18 00:52:11,067 INFO    MainThread:3602 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-18 00:52:11,074 INFO    MainThread:3602 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/martaalvarez/MLII-Grupo6/Project_Grupo6_MLII/src/project/wandb/run-20250418_005211-9dd96mks/logs/debug.log
+2025-04-18 00:52:11,074 INFO    MainThread:3602 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/martaalvarez/MLII-Grupo6/Project_Grupo6_MLII/src/project/wandb/run-20250418_005211-9dd96mks/logs/debug-internal.log
+2025-04-18 00:52:11,074 INFO    MainThread:3602 [wandb_init.py:init():761] calling init triggers
+2025-04-18 00:52:11,075 INFO    MainThread:3602 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'img_size': 224, 'optimizer': 'Adam', 'learning_rate': 0.0001, 'epochs': 7, 'unfreezed_layers': 5, '_wandb': {}}
+2025-04-18 00:52:11,075 INFO    MainThread:3602 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-18 00:52:11,077 INFO    MainThread:3602 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-18 00:52:11,077 INFO    MainThread:3602 [wandb_init.py:_pause_backend():564] pausing backend

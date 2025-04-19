@@ -1,0 +1,17 @@
+2025-04-16 10:39:22,200 INFO    MainThread:84353 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/martaalvarez/MLII-Grupo6/Practicas_DeepLearning_2025_nuevo/03TransferLearning/wandb/run-20250416_103922-p6aq4fd7/logs/debug.log
+2025-04-16 10:39:22,201 INFO    MainThread:84353 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/martaalvarez/MLII-Grupo6/Practicas_DeepLearning_2025_nuevo/03TransferLearning/wandb/run-20250416_103922-p6aq4fd7/logs/debug-internal.log
+2025-04-16 10:39:22,201 INFO    MainThread:84353 [wandb_init.py:init():761] calling init triggers
+2025-04-16 10:39:22,201 INFO    MainThread:84353 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'img_size': 224, 'optimizer': 'Adam', 'learning_rate': 1e-05, 'epochs': 7, '_wandb': {}}
+2025-04-16 10:39:22,201 INFO    MainThread:84353 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-16 10:39:22,203 INFO    MainThread:84353 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-16 10:39:22,203 INFO    MainThread:84353 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-16 10:39:40,599 INFO    MainThread:84353 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-16 10:39:41,053 INFO    MainThread:84353 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-16 10:39:41,053 INFO    MainThread:84353 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-16 10:39:48,298 INFO    MainThread:84353 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-16 18:48:16,860 INFO    MainThread:84353 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-16 18:48:16,889 INFO    MainThread:84353 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-17 14:02:28,654 INFO    MainThread:84353 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-17 14:02:29,073 INFO    MainThread:84353 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-17 14:02:29,073 INFO    MainThread:84353 [wandb_init.py:_pause_backend():564] pausing backend

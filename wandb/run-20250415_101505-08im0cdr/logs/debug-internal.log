@@ -1,0 +1,47 @@
+{"time":"2025-04-15T10:15:05.670486+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/martaalvarez/MLII-Grupo6/Practicas_DeepLearning_2025_nuevo/03TransferLearning/wandb/run-20250415_101505-08im0cdr/logs/debug-core.log"}
+{"time":"2025-04-15T10:15:05.685582+02:00","level":"INFO","msg":"created new stream","id":"08im0cdr"}
+{"time":"2025-04-15T10:15:05.685678+02:00","level":"INFO","msg":"stream: started","id":"08im0cdr"}
+{"time":"2025-04-15T10:15:05.685709+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"08im0cdr"}
+{"time":"2025-04-15T10:15:05.685726+02:00","level":"INFO","msg":"handler: started","stream_id":"08im0cdr"}
+{"time":"2025-04-15T10:15:05.68579+02:00","level":"INFO","msg":"sender: started","stream_id":"08im0cdr"}
+{"time":"2025-04-15T10:15:06.576337+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-15T10:15:06.820067+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T10:16:00.004036+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T10:38:57.348894+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.8.185:51451->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-15T11:01:26.183628+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.8.185:51602->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-15T11:01:26.366949+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/MLII-Grupo6-2025/MLII-Grupo6-2025/08im0cdr/file_stream\": read tcp 192.168.8.185:51635->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-15T11:33:26.685304+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.8.185:51672->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-15T12:26:40.623276+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T12:29:46.746884+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/MLII-Grupo6-2025/MLII-Grupo6-2025/08im0cdr/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-04-15T12:31:23.781885+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T12:31:25.138702+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T12:31:57.541021+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T12:31:57.559641+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T12:33:11.780267+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T12:33:11.816975+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T12:33:45.280574+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T12:51:33.458741+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/MLII-Grupo6-2025/MLII-Grupo6-2025/08im0cdr/file_stream\": EOF"}
+{"time":"2025-04-15T13:15:10.1259+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/MLII-Grupo6-2025/MLII-Grupo6-2025/08im0cdr/file_stream\": read tcp 192.168.8.185:53063->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-15T13:30:38.15595+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/MLII-Grupo6-2025/MLII-Grupo6-2025/08im0cdr/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-15T13:30:39.908576+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.8.185:52552->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-15T14:03:14.634441+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T14:07:53.78297+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T14:07:54.900898+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T14:08:35.26701+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T14:08:35.306731+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T14:09:04.712912+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T14:09:04.724406+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T14:09:05.787588+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T14:09:05.80168+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T14:09:06.216221+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T14:09:06.22786+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T14:09:06.864255+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T14:09:06.893485+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T14:09:07.254234+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T14:09:07.263483+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T14:10:38.296258+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T14:10:39.639843+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T14:10:44.185792+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T14:10:44.1996+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-15T14:10:47.051458+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-15T14:15:59.362921+02:00","level":"INFO","msg":"Pausing system monitor"}
