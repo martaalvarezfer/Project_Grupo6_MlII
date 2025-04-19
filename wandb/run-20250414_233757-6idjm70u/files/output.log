@@ -1,9 +1,0 @@
-Epoch 1/2 - Train Loss: 2.4323, Train Accuracy: 0.4431
-Epoch 1/2 - Validation Loss: 2.0421, Validation Accuracy: 0.7987
-Epoch 2/2 - Train Loss: 2.0613, Train Accuracy: 0.7723
-[34m[1mwandb[0m: [33mWARNING[0m Fatal error while uploading data. Some run data will not be synced, but it will still be written to disk. Use `wandb sync` at the end of the run to try uploading.
-Epoch 2/2 - Validation Loss: 1.9119, Validation Accuracy: 0.9113
-Epoch 1/2 - Train Loss: 2.6884, Train Accuracy: 0.1812
-Epoch 1/2 - Validation Loss: 2.6705, Validation Accuracy: 0.1713
-Epoch 2/2 - Train Loss: 2.5840, Train Accuracy: 0.3382
-Epoch 2/2 - Validation Loss: 2.5289, Validation Accuracy: 0.4273

@@ -1,8 +1,0 @@
-2025-03-27 00:59:03,713 INFO    MainThread:4446 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/martaalvarez/MLII-Grupo6/Practicas_DeepLearning_2025_nuevo/03TransferLearning/wandb/run-20250327_005903-pgzon689/logs/debug.log
-2025-03-27 00:59:03,714 INFO    MainThread:4446 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/martaalvarez/MLII-Grupo6/Practicas_DeepLearning_2025_nuevo/03TransferLearning/wandb/run-20250327_005903-pgzon689/logs/debug-internal.log
-2025-03-27 00:59:03,714 INFO    MainThread:4446 [wandb_init.py:init():761] calling init triggers
-2025-03-27 00:59:03,714 INFO    MainThread:4446 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
-config: {'batch_size': 16, 'img_size': 224, 'optimizer': 'Adam', 'learning_rate': 0.001, 'epochs': 10, '_wandb': {}}
-2025-03-27 00:59:03,715 INFO    MainThread:4446 [wandb_init.py:init():776] wandb.init() called while a run is active
-2025-03-27 00:59:03,717 INFO    MainThread:4446 [jupyter.py:save_ipynb():386] not saving jupyter notebook
-2025-03-27 00:59:03,718 INFO    MainThread:4446 [wandb_init.py:_pause_backend():564] pausing backend
