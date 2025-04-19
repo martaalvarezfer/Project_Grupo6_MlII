@@ -108,7 +108,7 @@ streamlit run src/streamlit/app.py
    Aplicar técnicas como *data augmentation* (rotaciones, escalado, etc.).
 
 2. **Modelos de segundo nivel**  
-   Hemos detectado que nuestros modelos son mejores en cierto tipo de imagen que en otras, es decir en algunas no presenta un porcentaje       alto de confianza en ninguna de ellas. Por tanto estas dudodas se pasarían a submodelos que están especializados en diversos tipos de       imágenes y se seleccionaria el que presente el mayor porcentaje de confianza. Por tanto podríamos aplicar un primer modelo que detecte.     Esta técnica puede aumentar la precisión general, porque permite hacer predicciones más cuidadosas y específicas en los casos más           difíciles, en lugar de forzar una decisión poco segura con el modelo principal.
+   Hemos observado que nuestros modelos principales obtienen mejores resultados con ciertos tipos de imágenes, mientras que en otros casos     no logran alcanzar un alto nivel de confianza en sus predicciones. Por ello, proponemos una estrategia en la que, cuando el modelo          principal no esté seguro de su predicción, se delegue la tarea a submodelos especializados en diferentes categorías de imágenes. Se         seleccionará entonces el submodelo que muestre el mayor nivel de confianza en su resultado. Esta técnica puede mejorar la precisión         general del sistema, ya que permite realizar predicciones más cuidadosas y específicas en los casos más complejos, en lugar de forzar       una decisión poco confiable por parte del modelo principal.
 
 3. **Entrenamiento con GPU**  
    Limitación clave del proyecto. Modelos más pesados como `resnext101_64x4d` no se han podido entrenar completamente.
