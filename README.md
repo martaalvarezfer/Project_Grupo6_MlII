@@ -53,7 +53,7 @@ pip install -r requirements.txt
 ⚠️ Importante
 Como los archivos de los modelos superan los 100 MB, GitHub no permite subirlos (y tampoco logramos almacenarlos en Weights & Biases).
 
-Para que la aplicación Streamlit funcione correctamente con los pesos entrenados, tendrás que descargarlos desde la siguiente carpeta de Google Drive y colocarlos manualmente en el directorio models de tu proyecto:
+Para que la aplicación Streamlit funcione correctamente con los pesos entrenados, tendrás que descargarlos desde la siguiente carpeta de Google Drive y colocarlos manualmente en el directorio models de tu proyecto:https://drive.google.com/drive/folders/1AphtkqBvASYwLl25jc5SlLifUztWXKA5?usp=drive_link
 
 ## **Modelos entrenados**
 
@@ -85,24 +85,24 @@ streamlit run src/streamlit/app.py
 
 A lo largo del proyecto y una vez finalizado este podemos identificar posibles mejoras:
 
-1. Precision modelos
+**1. Añadir variedad a los datos**
+   
+Haciendo rotaciones o escalar las imágenes para aumentar el conjunto de datos
 
-2. Añadir variedad a los datos
-   Haciendo rotaciones o escalar las imágenes para aumentar el conjunto de datos
-
-3. Modelos a segundo nivel
+**2. Modelos a segundo nivel**
 
 Hemos detectado que nuestros modelos son mejores en cierto tipo de imagen que en otras, es decir en algunas no presenta un porcentaje alto de confianza en ninguna de ellas. Por tanto estas dudodas se pasarían a submodelos que están especializados en diversos tipos de imágenes y se seleccionaria el que presente el mayor porcentaje de confianza. Por tanto podríamos aplicar un primer modelo que detecte. Esta técnica puede aumentar la precisión general, porque permite hacer predicciones más cuidadosas y específicas en los casos más difíciles, en lugar de forzar una decisión poco segura con el modelo principal.
 
-4. Probar modelos con GPU
+**3. Probar modelos con GPU**
 
 Una limitación que hemos tenido es carecer de GPUs en ninguno de los ordenadores y la opción de GPU que ofrece google drive no erá suficiente, por tanto modelos como resnext101_64x4d solo los hemos podido probar con pocas épocas.
 
-5. Descongelas capas concretas
+**4. Descongelas capas concretas**
 
 En lugar de entrenar a ciegas partes del modelo, decides cuáles partes realmente necesitan aprender para adaptarse a tu tarea. Este aspecto fue el que probamos una vez vista nuestra limitación con la GPU, obteniendo buenos resultado con modelos menos pesados como efficientnet_b4 o efficientnet_b5.
 
-6. Customizar la función de perdida
-   Otra idea no implementada por tiempo, es adaptar la función de perdida a las necesidades específicas de nuestro modelo
+**5. Customizar la función de perdida**
+   
+Otra idea no implementada por tiempo, es adaptar la función de perdida a las necesidades específicas de nuestro modelo
 
 Queremos concluir con la idea de que realizar este proyecto nos ha permitido acercarnos a un modelo en producción, pudiendo monitorizar nuestras métricas e incluir nuestro mejores modelos en un MVP final.
