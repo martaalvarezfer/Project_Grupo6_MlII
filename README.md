@@ -56,7 +56,7 @@ pip install -r requirements.txt
 Los archivos `.pt` superan los **100 MB**, por lo tanto no se incluyen en GitHub. Además, tampoco pudimos alojarlos correctamente en W&B.  
 Para usar la app, debes descargarlos desde esta carpeta de Google Drive y colocarlos en el directorio `models/`:
 
-🔗 https://drive.google.com/drive/folders/1AphtkqBvASYwLl25jc5SlLifUztWXKA5?usp=drive_link
+🔗 https://drive.google.com/drive/folders/16Kv4ADU2d1ow-46PWrHoT4E0jnmw3cOn?usp=sharing
 
 ---
 
