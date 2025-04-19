@@ -1,108 +1,124 @@
-# **Maching Learning II course**
-
-# **Deep Learning project**
+# **Machine Learning II – Deep Learning Project**
 
 ## **Canonist.ia**
 
-El objectivo de este proyecto es aplicar transfer learning a un caso de negocio simulado de portales inmobiliarios y desplegar el modelo en una aplicación Streamlit accesible públicamente.
+El objetivo de este proyecto es aplicar *transfer learning* a un caso de negocio simulado relacionado con portales inmobiliarios y desplegar el modelo en una aplicación **Streamlit** accesible públicamente.
 
-El proyecto consiste en recibir una imagen y clasificarla según su entorno (habitación, cocina,bosque,indistria, ...), utilizando diversas CNN preentrenadas que se ajustarán en función a nuestras necesidades. Para ello, se entrenarán los modelos empleando la web de Weights & Biases, donde se reportarán de manera detallada todas las métricas relevantes y al mismo tiempo nos servirá para hacer una comparativa de modelo. Una vez listo, el modelo se integrará en una aplicación Streamlit que permitirá a los usuarios cargar imágenes y obtener una clasificación de forma amigable y en tiempo real.
+La aplicación recibe una imagen y la clasifica según su entorno (**habitación**, **cocina**, **bosque**, **industria**, etc.), utilizando diversas **CNN preentrenadas** que se ajustan a nuestras necesidades. Para ello, se entrenan varios modelos empleando la plataforma **Weights & Biases (W&B)**, donde se reportan métricas detalladas y se comparan entre ellos. 
 
-This project was undertaken as part of the Maching Learnning course within the Big Data Master's Degree program at Comillas ICAI University.
+Una vez entrenado el modelo, se integra en una app **Streamlit** que permite a los usuarios cargar imágenes y obtener una predicción de forma sencilla y en tiempo real.
 
-The team responsible for the project includes:
+Este proyecto se ha desarrollado como parte de la asignatura *Machine Learning II* del **Máster en Big Data** de la Universidad **Comillas ICAI**.
 
-| Name                       | Email                           |
-| -------------------------- | ------------------------------- |
-| Marta Álvarez Fernández    | 202402675@alu.comillas.edu      |
-| Leticia Cólgan Valero      | leticiacologan@alu.comillas.edu |
-| Ana Vera Peña              | 202416868@alu.comillas.edu      |
-| Antonio Bajo Gómez-Madurga | 202410510@alu.comillas.edu      |
+### 👥 **Equipo del proyecto**
 
-## **Previous requirements**
+| Nombre                      | Email                              |
+|----------------------------|------------------------------------|
+| Marta Álvarez Fernández    | 202402675@alu.comillas.edu         |
+| Leticia Cólgan Valero      | leticiacologan@alu.comillas.edu    |
+| Ana Vera Peña              | 202416868@alu.comillas.edu         |
+| Antonio Bajo Gómez-Madurga | 202410510@alu.comillas.edu         |
 
-1. Clone the repository
+---
+
+## ⚙️ **Requisitos previos**
+
+1. Clona el repositorio
 
 ```bash
-git clone https://github.com/martaalvarezfer/Project_Grupo6_MlII.git
+git clone https://github.com/martaalvarezfer/Project_Grupo6_MLII.git
 ```
 
-2. Create a venv & install the necessary libraries
+2. Crea el entorno virtual e instala las dependencias
 
 ```bash
-cd Project_Grupo6_MlII
+cd Project_Grupo6_MLII
 python -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-3. If necessary, update .gitignore with your own sensitive files
+3. Asegúrate de incluir en `.gitignore` tus archivos sensibles y los `.pt`.
 
-## **Folders**
+---
 
-- src: contiene dos carpetas:
-  . proyect: contiene el script con que que se han llevado a cabo los entrenamientos y las clase CNN, para los modelos efficientnet se ultiza otra. Tambien contiene un script(comp.py) con que el poder obtener un csv para poder ver que es lo que peor detecta nuestro modelo. Dicho csv depues se le puede pasar al scrip (res.py) que casa la matriz de confusión con los top 10 donde más se equivoca nuestro modelo
+## 📁 **Estructura de carpetas**
 
-      . streamlit: contiene el script que permite ejecutar y lanzar la app
+- `src/`  
+  - `project/`: scripts de entrenamiento, arquitectura CNN, comparaciones y generación de CSVs de predicción.  
+  - `streamlit/`: script para lanzar la app.
+- `models/`: contiene los archivos `.pt` con los pesos entrenados (NO incluidos en GitHub).
+- `dataset/`: conjunto de imágenes utilizadas para entrenamiento y validación.
+- `img/`: imágenes ilustrativas como capturas de la app.
 
-- models: contiene los archivos .pt que es un fichero binario con los pesos de los modelos entrenados de los cuales hemos obtenido mejores resultados
-- dataset: Folder containing all the inputs used for the model.
-- wandb: As all the info of the models is reported to W&B.
+⚠️ **Importante**  
+Los archivos `.pt` superan los **100 MB**, por lo tanto no se incluyen en GitHub. Además, tampoco pudimos alojarlos correctamente en W&B.  
+Para usar la app, debes descargarlos desde esta carpeta de Google Drive y colocarlos en el directorio `models/`:
 
-⚠️ Importante
-Como los archivos de los modelos superan los 100 MB, GitHub no permite subirlos (y tampoco logramos almacenarlos en Weights & Biases).
+🔗 https://drive.google.com/drive/folders/1AphtkqBvASYwLl25jc5SlLifUztWXKA5?usp=drive_link
 
-Para que la aplicación Streamlit funcione correctamente con los pesos entrenados, tendrás que descargarlos desde la siguiente carpeta de Google Drive y colocarlos manualmente en el directorio models de tu proyecto:https://drive.google.com/drive/folders/1AphtkqBvASYwLl25jc5SlLifUztWXKA5?usp=drive_link
+---
 
-## **Modelos entrenados**
+## 🧠 **Modelo seleccionado**
 
-Puedes observar los modelos entrenados y sus métricas en el siguiente link: https://wandb.ai/MLII-Grupo6-2025/MLII-Grupo6-2025?nw=nwuser<user_number> destacamo este modelo de los entrenados, que es el que usamos en la app:
+**ConvNeXt Base** entrenado con **Cross-Entropy Loss**
 
-_ConvNeXt Base entrenado con Cross-Entropy Loss_:
-Este modelo ha sido seleccionado como el mejor entre todos los entrenados. Se ha utilizado la arquitectura ConvNeXt Base, preentrenada en ImageNet, y ajustada mediante fine-tuning con las últimas 5 capas descongeladas. Usando la función de pérdida Cross-Entropy Loss y el optimizador Adam, con un learning rate: 0.0001 sobre un tamaño de imagen de 224x224 píxeles y durante 7 épocas. Precisión en entrenamiento: 91.06%. Precisión en validación: 93.60% .Pérdida en entrenamiento: 0.275. Pérdida en validación: 0.178
+Este modelo ha sido el mejor evaluado. Se ha utilizado la arquitectura `convnext_base`, preentrenada en ImageNet, ajustada mediante *fine-tuning* descongelando las últimas **5 capas**. Entrenado durante **7 épocas**, con imágenes RGB de tamaño **224x224**, usando:
 
-Sabemos que nuestro modelo no es igual de bueno predicciendo los diferentes tipos de entorno presenta sus mayores dificultades a la hora de diferenciar entre habitaciones visualmente similares. Las principales confusiones se producen entre:
+- Optimizador: `Adam`
+- Learning rate: `0.0001`
+- Función de pérdida: `Cross-Entropy`
 
-- Bedroom y Living room
-- Office y Kitchen
+📊 **Resultados:**
 
-Esto sugiere que el modelo tiende a fallar cuando se trata de interiores con elementos comunes, como muebles, iluminación o distribución espacial. Estas confusiones podrían deberse a la similitud visual entre estas clases en el conjunto de datos.
+- Entrenamiento: **91.06%**
+- Validación: **93.60%**
+- Train loss: `0.275`
+- Val loss: `0.178`
 
-## **App**
+🔍 **Errores más comunes del modelo:**
 
-Los modelos antes citados pueden probarse en la app. Para lanzar la app debes:
+El modelo tiene dificultades para diferenciar entornos visualmente similares, por ejemplo:
+
+- `Bedroom` → `Living room` 
+- `Office` → `Kitchen` 
+
+Esto sugiere que las confusiones se dan principalmente en interiores con elementos comunes como iluminación o distribución.
+
+---
+
+## 🚀 **Lanzar la app**
+
+Puedes probar el modelo directamente con la app ejecutando:
 
 ```bash
 streamlit run src/streamlit/app.py
 ```
 
-### Example: App
+### Ejemplo de interfaz:
 
-![Testing App](img/app.png)
+![App](img/app.png)
 
-## **Mejoras a implementat**
+---
 
-A lo largo del proyecto y una vez finalizado este podemos identificar posibles mejoras:
+## 🔧 **Mejoras propuestas**
 
-**1. Añadir variedad a los datos**
-   
-Haciendo rotaciones o escalar las imágenes para aumentar el conjunto de datos
+1. **Aumentar la variedad del dataset**  
+   Aplicar técnicas como *data augmentation* (rotaciones, escalado, etc.).
 
-**2. Modelos a segundo nivel**
+2. **Modelos de segundo nivel**  
+   Hemos detectado que nuestros modelos son mejores en cierto tipo de imagen que en otras, es decir en algunas no presenta un porcentaje       alto de confianza en ninguna de ellas. Por tanto estas dudodas se pasarían a submodelos que están especializados en diversos tipos de       imágenes y se seleccionaria el que presente el mayor porcentaje de confianza. Por tanto podríamos aplicar un primer modelo que detecte.     Esta técnica puede aumentar la precisión general, porque permite hacer predicciones más cuidadosas y específicas en los casos más           difíciles, en lugar de forzar una decisión poco segura con el modelo principal.
 
-Hemos detectado que nuestros modelos son mejores en cierto tipo de imagen que en otras, es decir en algunas no presenta un porcentaje alto de confianza en ninguna de ellas. Por tanto estas dudodas se pasarían a submodelos que están especializados en diversos tipos de imágenes y se seleccionaria el que presente el mayor porcentaje de confianza. Por tanto podríamos aplicar un primer modelo que detecte. Esta técnica puede aumentar la precisión general, porque permite hacer predicciones más cuidadosas y específicas en los casos más difíciles, en lugar de forzar una decisión poco segura con el modelo principal.
+3. **Entrenamiento con GPU**  
+   Limitación clave del proyecto. Modelos más pesados como `resnext101_64x4d` no se han podido entrenar completamente.
 
-**3. Probar modelos con GPU**
+4. **Descongelar capas específicas**  
+   En lugar de hacerlo por número, elegir capas concretas relevantes.
 
-Una limitación que hemos tenido es carecer de GPUs en ninguno de los ordenadores y la opción de GPU que ofrece google drive no erá suficiente, por tanto modelos como resnext101_64x4d solo los hemos podido probar con pocas épocas.
+5. **Función de pérdida personalizada**  
+   Adaptarla a desequilibrios o dificultades del dataset.
 
-**4. Descongelas capas concretas**
+---
 
-En lugar de entrenar a ciegas partes del modelo, decides cuáles partes realmente necesitan aprender para adaptarse a tu tarea. Este aspecto fue el que probamos una vez vista nuestra limitación con la GPU, obteniendo buenos resultado con modelos menos pesados como efficientnet_b4 o efficientnet_b5.
-
-**5. Customizar la función de perdida**
-   
-Otra idea no implementada por tiempo, es adaptar la función de perdida a las necesidades específicas de nuestro modelo
-
-Queremos concluir con la idea de que realizar este proyecto nos ha permitido acercarnos a un modelo en producción, pudiendo monitorizar nuestras métricas e incluir nuestro mejores modelos en un MVP final.
+Este proyecto nos ha permitido simular un flujo real de desarrollo de un modelo en producción, incluyendo la monitorización, evaluación, y despliegue en una aplicación funcional para el usuario final.
